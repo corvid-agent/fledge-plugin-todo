@@ -1,0 +1,6 @@
+[package]
+name = "fledge-plugin-todo"
+version = "0.1.0"
+edition = "2021"
+description = "Fledge plugin: scan for TODO/FIXME/HACK/XXX comments"
+license = "MIT"

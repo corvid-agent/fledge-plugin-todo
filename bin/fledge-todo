@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PLUGIN_DIR="$(dirname "$SCRIPT_DIR")"
+BINARY="$PLUGIN_DIR/target/release/fledge-plugin-todo"
+
+if [ ! -f "$BINARY" ]; then
+    echo "Building fledge-plugin-todo..." >&2
+    (cd "$PLUGIN_DIR" && cargo build --release --quiet)
+fi
+
+exec "$BINARY" "$@"

@@ -1,0 +1,13 @@
+[plugin]
+name = "fledge-plugin-todo"
+version = "0.1.0"
+description = "Scan your codebase for TODO, FIXME, HACK, and XXX comments"
+author = "CorvidLabs"
+
+[[commands]]
+name = "todo"
+description = "Find TODO/FIXME/HACK/XXX comments in your project"
+binary = "bin/fledge-todo"
+
+[hooks]
+post_install = "bin/build.sh"
