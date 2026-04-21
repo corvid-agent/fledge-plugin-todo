@@ -10,4 +10,4 @@ description = "Find TODO/FIXME/HACK/XXX comments in your project"
 binary = "bin/fledge-todo"
 
 [hooks]
-post_install = "bin/build.sh"
+build = "bin/build.sh"
