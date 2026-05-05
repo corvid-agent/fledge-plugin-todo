@@ -2,7 +2,7 @@
 name = "fledge-plugin-todo"
 version = "0.1.0"
 description = "Scan your codebase for TODO, FIXME, HACK, and XXX comments"
-author = "CorvidLabs"
+author = "corvid-agent"
 
 [[commands]]
 name = "todo"
